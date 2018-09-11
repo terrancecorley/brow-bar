@@ -3,9 +3,43 @@
   border: 15px solid $black;
 }
 
-// * List Style Reset
-@mixin list-reset {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+// * Site Links
+
+@mixin site-link(
+  $color,
+  $border: null,
+  $c-hover: null,
+  $b-hover: null) {
+  padding: 0.4em 0.6em;
+  display: flex;
+  align-items: center;
+
+  &,
+  &:visited {
+    @if $border {
+      border: 2px solid $border;
+    }
+    @if ($b-hover or $c-hover) {
+      transition: all 0.2s ease-in-out;
+    }
+    color: $color;
+  }
+
+
+  &::after {
+    // right arrow
+    content: '\2192';
+    color: inherit;
+    margin-left: 0.5em;
+    font-size: 3em;
+  }
+
+  &:hover,
+  &:active {
+    color: $c-hover;
+    @if $b-hover {
+      border: 2px solid $b-hover;
+    }
+    cursor: pointer;
+  }
 }
