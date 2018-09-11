@@ -10,11 +10,21 @@
   $border: null,
   $c-hover: null,
   $b-hover: null) {
-  border: 2px solid $border;
-  color: $color;
   padding: 0.4em 0.6em;
-  display: inline-block;
-  font-size: 40px;
+  display: flex;
+  align-items: center;
+
+  &,
+  &:visited {
+    @if $border {
+      border: 2px solid $border;
+    }
+    @if ($b-hover or $c-hover) {
+      transition: all 0.2s ease-in-out;
+    }
+    color: $color;
+  }
+
 
   &::after {
     // right arrow
@@ -24,17 +34,14 @@
     font-size: 3em;
   }
 
-  &:hover {
-    color: $c-hover;
-    border: 2px solid $b-hover;
+  &:hover,
+  &:active {
+    @if $c-hover {
+      color: $c-hover;
+    }
+    @if $b-hover {
+      border: 2px solid $b-hover;
+    }
+    cursor: pointer;
   }
-}
-
-// testing
-a {
-  @include site-link(
-    $site-link-color--primary,
-    $black,
-    red,
-    blue);
 }
