@@ -29,9 +29,14 @@ $bg-color--primary: $norway-green;
 $bg-color--secondary: $gray;
 $bg-color--tertiary: $black;
 
-// * Link Colors
-$link-color: $black;
-$link-color--hover: $norway-green;
+// * Nav Link Colors
+$nav-link-color: $black;
+$nav-link-color--hover: $norway-green;
+
+// * Site Link Colors
+$site-link-color--primary: $black;
+$site-link-color--secondary: $norway-green;
+$site-link-color--hover: $white;
 
 // * Breakpoints
 $break-sm: 1px;

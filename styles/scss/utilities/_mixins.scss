@@ -3,25 +3,38 @@
   border: 15px solid $black;
 }
 
-// * Links
-// btn with border and arrow
-// btn with arrow
-// btn with hover color
-// btn with hover color & border
+// * Site Links
 
-@mixin link {
-  // testing
+@mixin site-link(
+  $color,
+  $border: null,
+  $c-hover: null,
+  $b-hover: null) {
+  border: 2px solid $border;
+  color: $color;
+  padding: 0.4em 0.6em;
   display: inline-block;
-  border: 1px solid gray;
+  font-size: 40px;
+
   &::after {
     // right arrow
     content: '\2192';
-    color: orange;
-    border: 1px solid lightblue;
+    color: inherit;
+    margin-left: 0.5em;
+    font-size: 3em;
+  }
+
+  &:hover {
+    color: $c-hover;
+    border: 2px solid $b-hover;
   }
 }
 
 // testing
 a {
-  @include link;
+  @include site-link(
+    $site-link-color--primary,
+    $black,
+    red,
+    blue);
 }

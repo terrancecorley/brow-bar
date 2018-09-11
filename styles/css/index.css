@@ -1,12 +1,20 @@
 @charset "UTF-8";
 a {
+  border: 2px solid #212121;
+  color: #212121;
+  padding: 0.4em 0.6em;
   display: inline-block;
-  border: 1px solid gray;
+  font-size: 40px;
 }
 a::after {
   content: "→";
-  color: orange;
-  border: 1px solid lightblue;
+  color: inherit;
+  margin-left: 0.5em;
+  font-size: 3em;
+}
+a:hover {
+  color: red;
+  border: 2px solid blue;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -364,6 +372,10 @@ a {
 h2,
 h3 {
   text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
