@@ -3,9 +3,25 @@
   border: 15px solid $black;
 }
 
-// * List Style Reset
-@mixin list-reset {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+// * Links
+// btn with border and arrow
+// btn with arrow
+// btn with hover color
+// btn with hover color & border
+
+@mixin link {
+  // testing
+  display: inline-block;
+  border: 1px solid gray;
+  &::after {
+    // right arrow
+    content: '\2192';
+    color: orange;
+    border: 1px solid lightblue;
+  }
+}
+
+// testing
+a {
+  @include link;
 }
