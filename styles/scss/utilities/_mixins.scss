@@ -2,3 +2,10 @@
 @mixin picture-frame {
   border: 15px solid $black;
 }
+
+// * List Style Reset
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

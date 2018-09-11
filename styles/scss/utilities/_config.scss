@@ -1,3 +1,17 @@
+// * Fonts
+$font-family--primary: 'Source Sans Pro', sans-serif;
+$font-family--secondary: 'Lato', sans-serif;
+
+// * Font Weights
+$font-weight--light: 300;
+$font-weight--reg: 400;
+$font-weight--semi-bold: 600;
+$font-weight--bold: 700;
+
+// * Font Size
+$base__font-size: 1rem;
+$base__line-height: 1.5;
+
 // * Descriptive Colors
 $black: #212121;
 $gray: #6B6B6B;
@@ -19,14 +33,7 @@ $bg-color--tertiary: $black;
 $link-color: $black;
 $link-color--hover: $norway-green;
 
-// make btn extend
-
-// get font-families
-
-// get normalize
-
-// fontweights
-
-// base font size, line height
-
-// mixin for ul/li reset
+// * Breakpoints
+$break-sm: 1px;
+$break-md: 768px;
+$break-lg: 1100px;
