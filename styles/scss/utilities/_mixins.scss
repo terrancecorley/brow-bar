@@ -25,15 +25,6 @@
     color: $color;
   }
 
-
-  &::after {
-    // right arrow
-    content: '\2192';
-    color: inherit;
-    margin-left: 0.5em;
-    font-size: 3em;
-  }
-
   &:hover,
   &:active {
     color: $c-hover;
@@ -41,5 +32,13 @@
       border: 2px solid $b-hover;
     }
     cursor: pointer;
+  }
+
+  &::after {
+    // right arrow
+    content: '\2192';
+    color: inherit;
+    margin-left: 0.5em;
+    font-size: 3em;
   }
 }
