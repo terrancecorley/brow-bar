@@ -36,9 +36,7 @@
 
   &:hover,
   &:active {
-    @if $c-hover {
-      color: $c-hover;
-    }
+    color: $c-hover;
     @if $b-hover {
       border: 2px solid $b-hover;
     }
