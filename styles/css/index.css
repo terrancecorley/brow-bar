@@ -378,13 +378,13 @@ img {
 }
 .hero .overlay {
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  height: 100%;
   background-color: #FDFDFD;
   opacity: 0;
   position: absolute;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .hero:hover .overlay {
   opacity: 0.2;
