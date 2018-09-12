@@ -1,6 +1,32 @@
 // * Picture frame
-@mixin picture-frame {
-  border: 15px solid $black;
+@mixin picture-frame($pixels: 15px) {
+  border: $pixels solid $picture-frame--color;
+}
+
+// * Main Img Overlay
+@mixin main-img-overlay {
+  position: relative;
+
+  .overlay {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: $color--tertiary;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &:hover {
+    .overlay {
+      opacity: 0.2;
+    }
+  }
+
+  img {
+    display: block;
+  }
 }
 
 // * Site Links

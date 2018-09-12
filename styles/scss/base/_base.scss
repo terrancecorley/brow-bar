@@ -4,8 +4,19 @@
   box-sizing: inherit;
 }
 
+:root {
+  font-size: $base__font-size;
+}
+
 html {
   box-sizing: border-box;
+}
+
+body {
+  line-height: $base__line-height;
+  font-family: $font-family--primary;
+  color: $color--primary;
+  background-color: $color--tertiary;
 }
 
 ul {
@@ -18,9 +29,11 @@ a {
   text-decoration: none;
 }
 
+h1,
 h2,
 h3 {
   text-transform: uppercase;
+  font-family: $font-family--secondary;
 }
 
 img {
