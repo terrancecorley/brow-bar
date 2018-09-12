@@ -1,0 +1,4 @@
+.hero {
+  @include picture-frame;
+  @include main-img-overlay;
+}
