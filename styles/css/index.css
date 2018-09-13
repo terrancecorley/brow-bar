@@ -372,6 +372,25 @@ img {
   max-width: 100%;
 }
 
+.site-wrapper,
+main {
+  display: grid;
+  grid-gap: 25px;
+}
+
+.site-header {
+  display: flex;
+}
+.site-header .site-logo {
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .site-nav ul {
+    display: flex;
+  }
+}
+
 .hero {
   border: 15px solid #FDFDFD;
   position: relative;
@@ -391,6 +410,18 @@ img {
 }
 .hero img {
   display: block;
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+  .is-hidden-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .is-displayed-mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

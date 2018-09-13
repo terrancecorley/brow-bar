@@ -1,0 +1,13 @@
+// * Hidden on mobile
+.is-hidden-mobile {
+  @include query(mobile-only) {
+    display: none;
+  }
+}
+
+// * Displayed on mobile only
+.is-displayed-mobile {
+  @include query(medium) {
+    display: none;
+  }
+}

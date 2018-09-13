@@ -1,0 +1,15 @@
+// * Site Wrappers
+.site-wrapper,
+main {
+  display: grid;
+  grid-gap: 25px;
+}
+
+// * Site Header
+.site-header {
+  display: flex;
+
+  .site-logo {
+    margin-right: auto;
+  }
+}

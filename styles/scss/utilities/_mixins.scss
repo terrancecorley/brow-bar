@@ -68,3 +68,22 @@
     font-size: 3em;
   }
 }
+
+// * Media Queries
+@mixin query($breakpt) {
+  @if $breakpt == 'mobile-only' {
+    @media (min-width: $break-sm) and (max-width: $break-md - 1) {
+      @content;
+    }
+  } @else if $breakpt == 'medium' {
+    @media (min-width: $break-md) {
+      @content;
+    }
+  } @else if $breakpt == 'large' {
+    @media (min-width: $break-lg) {
+      @content;
+    }
+  } @else {
+    @error '`#{$breakpt}` is not a valid breakpoint.';
+  }
+}

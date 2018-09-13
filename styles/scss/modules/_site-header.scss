@@ -1,0 +1,10 @@
+
+
+// * Site Nav
+.site-nav {
+  ul {
+    @include query(medium) {
+      display: flex;
+    }
+  }
+}
