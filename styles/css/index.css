@@ -402,14 +402,25 @@ main {
 .site-logo {
   margin-right: auto;
   border: 2px solid #212121;
-  padding: 0.4em;
+  padding: 0 0.5em;
   display: flex;
+  width: 7.25em;
+  position: relative;
 }
 .site-logo h2 {
   margin: 0;
 }
+.site-logo div {
+  position: absolute;
+  right: 1.5em;
+  top: 0.575em;
+}
+.site-logo div > span {
+  display: block;
+  line-height: 0.8;
+}
 .site-logo span {
-  font-size: 0.775em;
+  font-size: 0.75em;
 }
 .site-logo span.dot {
   color: #AABFA4;
