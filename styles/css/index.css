@@ -436,22 +436,33 @@ main {
   }
 }
 
-.site-nav__menu {
+.site-nav__menu-btn {
   background: none;
   border: none;
   align-self: center;
   padding: 0.4em;
 }
-.site-nav__menu:hover {
+.site-nav__menu-btn:hover {
   cursor: pointer;
 }
-.site-nav__menu div {
+.site-nav__menu-btn div {
   background-color: #5b7753;
   height: 4px;
   width: 30px;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
 }
-.site-nav__menu div:nth-child(2) {
+.site-nav__menu-btn div:nth-child(2) {
   margin: 5px 0;
+}
+.site-nav__menu-btn.close div:first-child {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.site-nav__menu-btn.close div:nth-child(2) {
+  transform: rotate(-45deg) translate(0, -2px);
+}
+.site-nav__menu-btn.close div:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -7px);
+  opacity: 0;
 }
 
 .hero {
