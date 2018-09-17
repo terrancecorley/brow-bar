@@ -1,6 +1,6 @@
-// * Picture frame
-@mixin picture-frame($pixels: 15px) {
-  border: $pixels solid $picture-frame--color;
+// * Border
+@mixin border($pixels: 15px, $bor-color: $bor-color--primary) {
+  border: $pixels solid $bor-color;
 }
 
 // * Main Img Overlay

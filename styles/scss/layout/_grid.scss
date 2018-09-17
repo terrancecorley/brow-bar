@@ -5,11 +5,20 @@ main {
   grid-gap: 25px;
 }
 
+.site-wrapper {
+  @include query(mobile-only) {
+    padding: 0 4%;
+  }
+  @include query(medium) {
+    padding: 0 8%;
+  }
+  @include query(large) {
+    padding: 0 12%;
+  }
+}
+
 // * Site Header
 .site-header {
   display: flex;
-
-  .site-logo {
-    margin-right: auto;
-  }
+  font-size: 1.5rem;
 }

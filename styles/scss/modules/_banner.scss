@@ -1,4 +1,4 @@
 .hero {
-  @include picture-frame;
+  @include border;
   @include main-img-overlay;
 }
