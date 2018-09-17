@@ -1,7 +1,30 @@
 .site-nav {
+  display: flex;
+
   ul {
     @include query(medium) {
       display: flex;
     }
+  }
+}
+
+.site-nav__menu {
+  background: none;
+  border: none;
+  align-self: center;
+  padding: 0.4em;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  div {
+    background-color: darken($norway-green, 30%);
+    height: 4px;
+    width: 30px;
+  }
+
+  div:nth-child(2) {
+    margin: 5px 0;
   }
 }

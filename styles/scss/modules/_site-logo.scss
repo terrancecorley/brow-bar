@@ -1,6 +1,6 @@
 .site-logo {
   margin-right: auto;
-  @include border(2px, $bor-color--secondary);
+  @include border(4px, $bor-color--secondary);
   padding: 0 0.5em;
   display: flex;
   width: 7.25em;
@@ -12,8 +12,8 @@
 
   div {
     position: absolute;
-    right: 1.5em;
-    top: 0.575em;
+    right: 1.375em;
+    top: 0.57em;
   }
 
   div > span {

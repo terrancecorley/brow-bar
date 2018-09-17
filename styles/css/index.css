@@ -397,11 +397,12 @@ main {
 .site-header {
   display: flex;
   font-size: 1.5rem;
+  padding: 1em 0;
 }
 
 .site-logo {
   margin-right: auto;
-  border: 2px solid #212121;
+  border: 4px solid #212121;
   padding: 0 0.5em;
   display: flex;
   width: 7.25em;
@@ -412,8 +413,8 @@ main {
 }
 .site-logo div {
   position: absolute;
-  right: 1.5em;
-  top: 0.575em;
+  right: 1.375em;
+  top: 0.57em;
 }
 .site-logo div > span {
   display: block;
@@ -426,10 +427,31 @@ main {
   color: #AABFA4;
 }
 
+.site-nav {
+  display: flex;
+}
 @media (min-width: 768px) {
   .site-nav ul {
     display: flex;
   }
+}
+
+.site-nav__menu {
+  background: none;
+  border: none;
+  align-self: center;
+  padding: 0.4em;
+}
+.site-nav__menu:hover {
+  cursor: pointer;
+}
+.site-nav__menu div {
+  background-color: #5b7753;
+  height: 4px;
+  width: 30px;
+}
+.site-nav__menu div:nth-child(2) {
+  margin: 5px 0;
 }
 
 .hero {
