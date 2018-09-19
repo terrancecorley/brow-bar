@@ -498,4 +498,8 @@ main {
   }
 }
 
+.is-displayed-mobile--click {
+  display: none;
+}
+
 /*# sourceMappingURL=index.css.map */
