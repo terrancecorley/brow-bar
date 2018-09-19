@@ -407,6 +407,7 @@ main {
   display: flex;
   width: 7.25em;
   position: relative;
+  align-self: flex-start;
 }
 .site-logo h2 {
   margin: 0;
@@ -436,10 +437,27 @@ main {
   }
 }
 
+.site-nav__overlay-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.site-nav__overlay-wrapper ul {
+  text-align: right;
+}
+.site-nav__overlay-wrapper .site-nav__overlay {
+  position: relative;
+}
+.site-nav__overlay-wrapper .site-nav__overlay ul {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .site-nav__menu-btn {
   background: none;
   border: none;
-  align-self: center;
+  align-self: flex-end;
   padding: 0.4em;
 }
 .site-nav__menu-btn:hover {

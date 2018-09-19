@@ -1,7 +1,5 @@
 .site-nav {
   display: flex;
-  //test
-  // flex-wrap: wrap;
 
   ul {
     @include query(medium) {
@@ -10,10 +8,30 @@
   }
 }
 
+.site-nav__overlay-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    text-align: right;
+  }
+
+  .site-nav__overlay {
+    position: relative;
+  
+    ul {
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
 .site-nav__menu-btn {
   background: none;
   border: none;
-  align-self: center;
+  align-self: flex-end;
   padding: 0.4em;
 
   &:hover {
@@ -43,11 +61,4 @@
     transform: rotate(-45deg) translate(6px, -7px);
     opacity: 0;
   }
-}
-
-.site-nav__overlay {
-  //test
-  // min-width: 100vw;
-  // flex-basis: 100vw;
-  // border: 1px solid black;
 }
