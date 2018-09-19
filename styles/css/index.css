@@ -440,18 +440,19 @@ main {
 .site-nav__overlay-wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .site-nav__overlay-wrapper ul {
   text-align: right;
 }
 .site-nav__overlay-wrapper .site-nav__overlay {
-  position: relative;
-}
-.site-nav__overlay-wrapper .site-nav__overlay ul {
-  z-index: 10;
   position: absolute;
+  z-index: 10;
   top: 0;
   right: 0;
+}
+.site-nav__overlay-wrapper .site-nav__overlay ul {
+  padding-top: 3em;
 }
 
 .site-nav__menu-btn {
@@ -459,6 +460,7 @@ main {
   border: none;
   align-self: flex-end;
   padding: 0.4em;
+  z-index: 100;
 }
 .site-nav__menu-btn:hover {
   cursor: pointer;
