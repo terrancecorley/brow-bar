@@ -1,5 +1,7 @@
 .site-nav {
   display: flex;
+  //test
+  // flex-wrap: wrap;
 
   ul {
     @include query(medium) {
@@ -41,4 +43,11 @@
     transform: rotate(-45deg) translate(6px, -7px);
     opacity: 0;
   }
+}
+
+.site-nav__overlay {
+  //test
+  // min-width: 100vw;
+  // flex-basis: 100vw;
+  // border: 1px solid black;
 }
