@@ -15,6 +15,7 @@ main {
   }
   @include query(large) {
     padding: 0 10%;
+    padding-top: 135px;
   }
 }
 
