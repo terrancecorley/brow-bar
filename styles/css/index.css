@@ -390,7 +390,7 @@ main {
 }
 @media (min-width: 1100px) {
   .site-wrapper {
-    padding: 0 12%;
+    padding: 0 10%;
   }
 }
 
@@ -435,6 +435,30 @@ main {
 @media (min-width: 768px) {
   .site-nav ul {
     display: flex;
+    text-transform: uppercase;
+  }
+}
+.site-nav li {
+  align-self: center;
+  font-size: 0.9em;
+}
+.site-nav li a {
+  padding: 0.2em;
+  font-weight: 300;
+}
+.site-nav li a, .site-nav li a:visited {
+  color: #3b3b3b;
+  transition: 0.2s all ease-in-out;
+}
+.site-nav li a.selected, .site-nav li a:hover, .site-nav li a:active, .site-nav li a:focus {
+  color: #AABFA4;
+}
+.site-nav li:not(:last-child) {
+  margin-right: 1em;
+}
+@media (min-width: 1100px) {
+  .site-nav li:not(:last-child) {
+    margin-right: 4em;
   }
 }
 

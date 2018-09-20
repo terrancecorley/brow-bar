@@ -5,6 +5,37 @@
   ul {
     @include query(medium) {
       display: flex;
+      text-transform: uppercase;
+    }
+  }
+
+  li {
+    align-self: center;
+    font-size: 0.9em;
+
+    a {
+      padding: 0.2em;
+      font-weight: $font-weight--light;
+
+      &,
+      &:visited {
+        color: lighten($site-link-color--primary, 10%);
+        transition: 0.2s all ease-in-out;
+      }
+  
+      &.selected,
+      &:hover,
+      &:active,
+      &:focus {
+        color: $site-link-color--secondary;
+      }
+    }
+  }
+
+  li:not(:last-child) {
+    margin-right: 1em;
+    @include query(large) {
+      margin-right: 4em;
     }
   }
 }
