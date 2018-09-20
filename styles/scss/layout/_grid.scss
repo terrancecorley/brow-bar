@@ -42,4 +42,7 @@ main {
 .site-banner {
   // style mobile
   // add query for medium -- grid layout
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
 }

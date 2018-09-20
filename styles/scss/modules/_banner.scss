@@ -2,6 +2,9 @@
   @include border;
   @include main-img-overlay;
   max-width: 850px;
+
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
 }
 
 .left-panel {
@@ -10,4 +13,13 @@
 
 .right-panel {
   background-color: $bg-color--primary;
+
+  grid-row: 1 / 6;
+  grid-column: 1 / 2;
+}
+
+.cta {
+  grid-row: 4 / 6;
+  grid-column: 1 / 2;
+  border: 1px solid red;
 }

@@ -417,6 +417,12 @@ main {
   }
 }
 
+.site-banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+
 .site-logo {
   margin-right: auto;
   border: 4px solid #212121;
@@ -560,6 +566,8 @@ main {
   border: 15px solid #FDFDFD;
   position: relative;
   max-width: 850px;
+  grid-row: 1/4;
+  grid-column: 1/2;
 }
 .hero .overlay {
   width: 100%;
@@ -584,6 +592,14 @@ main {
 
 .right-panel {
   background-color: #AABFA4;
+  grid-row: 1/6;
+  grid-column: 1/2;
+}
+
+.cta {
+  grid-row: 4/6;
+  grid-column: 1/2;
+  border: 1px solid red;
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
