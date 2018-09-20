@@ -11,6 +11,7 @@ main {
   }
   @include query(medium) {
     padding: 0 8%;
+    padding-top: 135px;
   }
   @include query(large) {
     padding: 0 10%;
@@ -22,4 +23,16 @@ main {
   display: flex;
   font-size: 1.5rem;
   padding: 1em 0;
+  @include query(medium) {
+    padding: 1em 8%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    // color--tertiary
+    background-color: rgba(253, 253, 253, 0.9);
+  }
+  @include query(large) {
+    padding: 1em 10%;
+  }
 }
