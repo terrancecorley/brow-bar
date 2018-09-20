@@ -1,4 +1,13 @@
 .hero {
   @include border;
   @include main-img-overlay;
+  max-width: 850px;
+}
+
+.left-panel {
+  background-color: $color--tertiary;
+}
+
+.right-panel {
+  background-color: $bg-color--primary;
 }
