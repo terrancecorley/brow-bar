@@ -31,7 +31,9 @@
       }
     }
   }
+}
 
+.site-nav__links {
   li:not(:last-child) {
     margin-right: 1em;
     @include query(large) {
